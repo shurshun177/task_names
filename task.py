@@ -51,7 +51,6 @@ start = time.time()
 loop = asyncio.get_event_loop()
 loop.run_until_complete(req())
 loop.close()
-
-print(get_words_frequency())
 end = time.time()
+print(get_words_frequency())
 print('time is ', end - start)
